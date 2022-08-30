@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../stylesheets/navbar.scss';
+import { MdOutlineEmail } from 'react-icons/md';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
           <li className="nav-link icon-mail" id="mail-icon">
             <a href="mailto:user@example.com">
               <div className="icon-mail" />
-              email
+              <MdOutlineEmail />
             </a>
           </li>
         </ul>
