@@ -22,6 +22,7 @@ $offwhite-theme2: #dbd8d7;
     cursor: pointer;
     margin-right: 15px;
     transition-duration: 500ms;
+    padding: 5px;
 
     .bar {
       display: block;
@@ -76,4 +77,17 @@ $offwhite-theme2: #dbd8d7;
 
 .invisible {
   display: none;
+}
+
+.hide {
+  opacity: 0;
+}
+
+//Hamburger animation
+.bar-top.change {
+  transform: translateY(7px) rotateZ(45deg);
+}
+
+.bar-bottom.change {
+  transform: translateY(-7px) rotateZ(-45deg);
 }

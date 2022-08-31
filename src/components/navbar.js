@@ -6,6 +6,31 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   console.log(isOpen);
   console.log(setIsOpen);
+
+  // const handleDropdown = () => {
+  //   const topSlice = document.getElementById('top-slice');
+  //   const middleSlice = document.getElementById('middle-slice');
+  //   const bottomSlice = document.getElementById('bottom-slice');
+
+  //   const isTransformed =
+  // (topSlice.classList.contains('change') && bottomSlice.classList.contains('change'));
+
+  //   if (isOpen && !isTransformed) {
+  //   }
+  // }
+
+  const transformHamburger = () => {
+    // selects the slices of the hamburger
+    const topSlice = document.getElementById('top-slice');
+    const middleSlice = document.getElementById('middle-slice');
+    const bottomSlice = document.getElementById('bottom-slice');
+
+    // applies the transform animations to the hamburger slices
+    topSlice.classList.toggle('change');
+    middleSlice.classList.toggle('hide');
+    bottomSlice.classList.toggle('change');
+  };
+
   return (
     <nav id="navbar">
       <p className="logo">Aaron Keegan</p>
@@ -28,10 +53,10 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div id="hamburger" className="invisible">
-          <div className="bar bar-top" />
-          <div className="bar bar-middle" />
-          <div className="bar bar-bottom" />
+        <div role="presentation" id="hamburger" className="invisible" onClick={transformHamburger} onKeyDown={transformHamburger}>
+          <div id="top-slice" className="bar bar-top" />
+          <div id="middle-slice" className="bar bar-middle" />
+          <div id="bottom-slice" className="bar bar-bottom" />
         </div>
       </div>
     </nav>
