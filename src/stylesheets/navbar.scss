@@ -1,0 +1,141 @@
+$primary-bg: #fff;
+$theme1: #3c3a39;
+$theme2: #1c1a19;
+$theme3: #ff6b00;
+$light-text-theme: #e5e5e5;
+$white-theme: #fff;
+$offwhite-theme: #fff5e1;
+$offwhite-theme2: #dbd8d7;
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  font-size: 16px;
+  background-color: $theme1;
+  color: $white-theme;
+
+  #logo {
+    position: fixed;
+    left: 15px;
+  }
+
+  #hamburger {
+    right: 18px;
+    position: fixed;
+    top: 14px;
+    cursor: pointer;
+    transition-duration: 500ms;
+    padding: 5px;
+
+    .bar {
+      width: 25px;
+      height: 2px;
+      margin: 5px auto;
+      background-color: $white-theme;
+      transition-duration: 500ms;
+    }
+  }
+}
+
+.right-links {
+  font-size: 15px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #mail-icon {
+      font-size: 20px;
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: 674px) {
+  #hamburger {
+    display: block;
+  }
+
+  .right-links ul {
+    display: none;
+  }
+
+  .nav-link {
+    display: none;
+    border-bottom: 1px solid #6f6c6b;
+    width: 100%;
+    font-size: 10vw;
+    font-weight: 700;
+    line-height: 44px;
+    padding: 20px 0 10px;
+    margin: 18px 0;
+  }
+}
+
+.invisible {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+// Hamburger animation
+.bar-top.change {
+  transform: translateY(5px) rotateZ(45deg);
+}
+
+.bar-bottom.change {
+  transform: translateY(-2px) rotateZ(-45deg);
+}
+
+// Navbar open/closing
+
+.logo-hide {
+  display: none;
+}
+
+.show-navlink {
+  display: block;
+}
+
+.navbar-expanded {
+  height: 100vh;
+  align-items: flex-start;
+
+  .right-links {
+    margin-top: 58px;
+    margin-left: 16%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      .nav-link {
+        display: block;
+      }
+
+      #mail-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+.navbar-closed {
+  align-items: center;
+  height: 60px;
+
+  .right-links {
+    position: fixed;
+    right: 4rem;
+    top: 5px;
+  }
+}
