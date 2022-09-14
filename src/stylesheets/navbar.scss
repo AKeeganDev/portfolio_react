@@ -9,23 +9,26 @@ $offwhite-theme2: #dbd8d7;
 
 #navbar {
   display: flex;
-  padding: 5px 24px 5px 24px;
   justify-content: space-between;
-  align-items: center;
   flex: 1;
   font-size: 16px;
   background-color: $theme1;
   color: $white-theme;
-  height: inherit;
+
+  #logo {
+    position: fixed;
+    left: 15px;
+  }
 
   #hamburger {
+    right: 18px;
+    position: fixed;
+    top: 14px;
     cursor: pointer;
-    margin-right: 15px;
     transition-duration: 500ms;
     padding: 5px;
 
     .bar {
-      display: block;
       width: 25px;
       height: 2px;
       margin: 5px auto;
@@ -68,10 +71,11 @@ $offwhite-theme2: #dbd8d7;
     display: none;
     border-bottom: 1px solid #6f6c6b;
     width: 100%;
-    font-size: 32px;
+    font-size: 10vw;
     font-weight: 700;
     line-height: 44px;
     padding: 20px 0 10px;
+    margin: 18px 0;
   }
 }
 
@@ -80,14 +84,58 @@ $offwhite-theme2: #dbd8d7;
 }
 
 .hide {
-  opacity: 0;
+  display: none;
 }
 
-//Hamburger animation
+// Hamburger animation
 .bar-top.change {
-  transform: translateY(7px) rotateZ(45deg);
+  transform: translateY(5px) rotateZ(45deg);
 }
 
 .bar-bottom.change {
-  transform: translateY(-7px) rotateZ(-45deg);
+  transform: translateY(-2px) rotateZ(-45deg);
+}
+
+// Navbar open/closing
+
+.logo-hide {
+  display: none;
+}
+
+.show-navlink {
+  display: block;
+}
+
+.navbar-expanded {
+  height: 100vh;
+  align-items: flex-start;
+
+  .right-links {
+    margin-top: 58px;
+    margin-left: 16%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      .nav-link {
+        display: block;
+      }
+
+      #mail-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+.navbar-closed {
+  align-items: center;
+  height: 60px;
+
+  .right-links {
+    position: fixed;
+    right: 4rem;
+    top: 5px;
+  }
 }

@@ -4,7 +4,6 @@ import { MdOutlineEmail } from 'react-icons/md';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log('reset');
 
   const transformHamburger = () => {
     // selects the slices of the hamburger
@@ -18,8 +17,17 @@ const Navbar = () => {
     bottomSlice.classList.toggle('change');
   };
 
-  useEffect(() => {
+  const transformNavbar = () => {
+    const nav = document.getElementById('navbar');
+    const logo = document.getElementById('logo');
+    nav.classList.toggle('navbar-expanded');
+    nav.classList.toggle('navbar-closed');
+    logo.classList.toggle('logo-hide');
     transformHamburger();
+  };
+
+  useEffect(() => {
+    transformNavbar();
   }, [isOpen]);
 
   // event listeners that correct navbar if the screen resizes
@@ -31,18 +39,18 @@ const Navbar = () => {
   });
 
   return (
-    <nav id="navbar">
-      <p className="logo">Aaron Keegan</p>
+    <nav id="navbar" className="navbar-closed">
+      <p id="logo" className="logo">Aaron Keegan</p>
 
       <div className="right-links">
         <ul className="nav-links">
-          <li className="nav-link">
+          <li role="presentation" className="nav-link" onClick={() => { setIsOpen(!isOpen); }}>
             <a href="#portfolio" id="portfolio-link">Portfolio</a>
           </li>
-          <li className="nav-link">
+          <li role="presentation" className="nav-link" onClick={() => { setIsOpen(!isOpen); }}>
             <a href="#about-me" id="about-link">About</a>
           </li>
-          <li className="nav-link">
+          <li role="presentation" className="nav-link" onClick={() => { setIsOpen(!isOpen); }}>
             <a href="#contact-me" id="contact-link">Contact</a>
           </li>
           <li className="nav-link icon-mail" id="mail-icon">
