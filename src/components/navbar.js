@@ -1,14 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../stylesheets/navbar.scss';
 import { MdOutlineEmail } from 'react-icons/md';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+  console.log('reset');
 
   const transformHamburger = () => {
     // selects the slices of the hamburger
-    setIsOpen(!isOpen);
     const topSlice = document.getElementById('top-slice');
     const middleSlice = document.getElementById('middle-slice');
     const bottomSlice = document.getElementById('bottom-slice');
@@ -17,8 +16,19 @@ const Navbar = () => {
     topSlice.classList.toggle('change');
     middleSlice.classList.toggle('hide');
     bottomSlice.classList.toggle('change');
-    console.log(isOpen);
   };
+
+  useEffect(() => {
+    transformHamburger();
+  }, [isOpen]);
+
+  // event listeners that correct navbar if the screen resizes
+
+  window.addEventListener('resize', () => {
+    if (isOpen && window.innerWidth > 674) {
+      setIsOpen(false);
+    }
+  });
 
   return (
     <nav id="navbar">
@@ -42,7 +52,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div role="presentation" id="hamburger" className="invisible" onClick={transformHamburger} onKeyDown={transformHamburger}>
+        <div role="presentation" id="hamburger" className="invisible" onClick={() => { setIsOpen(!isOpen); }} onKeyDown={transformHamburger}>
           <div id="top-slice" className="bar bar-top" />
           <div id="middle-slice" className="bar bar-middle" />
           <div id="bottom-slice" className="bar bar-bottom" />
