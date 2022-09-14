@@ -5,22 +5,10 @@ import { MdOutlineEmail } from 'react-icons/md';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   console.log(isOpen);
-  console.log(setIsOpen);
-
-  // const handleDropdown = () => {
-  //   const topSlice = document.getElementById('top-slice');
-  //   const middleSlice = document.getElementById('middle-slice');
-  //   const bottomSlice = document.getElementById('bottom-slice');
-
-  //   const isTransformed =
-  // (topSlice.classList.contains('change') && bottomSlice.classList.contains('change'));
-
-  //   if (isOpen && !isTransformed) {
-  //   }
-  // }
 
   const transformHamburger = () => {
     // selects the slices of the hamburger
+    setIsOpen(!isOpen);
     const topSlice = document.getElementById('top-slice');
     const middleSlice = document.getElementById('middle-slice');
     const bottomSlice = document.getElementById('bottom-slice');
@@ -29,6 +17,7 @@ const Navbar = () => {
     topSlice.classList.toggle('change');
     middleSlice.classList.toggle('hide');
     bottomSlice.classList.toggle('change');
+    console.log(isOpen);
   };
 
   return (
