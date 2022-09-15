@@ -1,0 +1,27 @@
+.recent-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 24px;
+
+  .recent-work-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    .heading {
+      padding-top: 10px;
+      font-family: 'Crete Round', sans-serif;
+      text-align: center;
+
+      h1 {
+        font-size: 38px;
+        font-weight: 400;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
