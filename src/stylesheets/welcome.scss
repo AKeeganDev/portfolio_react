@@ -1,0 +1,118 @@
+$theme2: #1c1a19;
+$theme3: #ff6b00;
+$white-theme: #fff;
+$offwhite-theme: #fff5e1;
+$offwhite-theme2: #dbd8d7;
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Crete+Round");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.welcome {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: $theme2;
+  background-image: url('../assets/illustration-header-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 115%;
+  color: var(--white-theme);
+  padding: 120px 24px;
+
+  .greeting-text-container {
+    color: $white-theme;
+
+    .greeting {
+      color: $theme3;
+      font-weight: 400;
+      font-size: 56px;
+      font-family: 'Crete Round', sans-serif;
+      margin-bottom: 12px;
+      max-width: 350px;
+    }
+
+    .who-am-i {
+      color: $offwhite-theme;
+      font-family: 'Roboto', sans-serif;
+      font-size: 24px;
+    }
+
+    p {
+      max-width: 520px;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: 'Poppins', 'Courier New', Courier, monospace;
+    }
+  }
+
+  .contact-bar {
+    display: flex;
+
+    ul {
+      display: flex;
+      flex: 0 0 auto;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      max-width: 200px;
+      gap: 23px;
+
+      .social-link {
+        font-size: 28px;
+        color: $offwhite-theme2;
+      }
+    }
+  }
+}
+
+// media queries
+
+// Welcome background svg
+// moves large svg into view and fixes
+@media screen and (min-width: 675px) {
+  .welcome {
+    flex-direction: row;
+    background-image: url('../assets/Illustration-header-full.svg');
+    background-repeat: no-repeat;
+    background-position-x: 500px;
+    background-position-y: 40%;
+    padding-top: 200px;
+  }
+}
+
+// moves large svg into fixed position on the right side of screen for large windows
+@media screen and (min-width: 1162px) {
+  .welcome {
+    background-position-x: 100%;
+  }
+}
+
+// Greeting text sizing
+
+@media screen and (min-width: 675px) {
+  .greeting-text-container p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 446px) {
+  .greeting-text-container p {
+    max-width: 389px;
+  }
+}
+
+// Contact Bar
+
+@media screen and (min-width: 675px) {
+  .contact-bar {
+    margin-right: 35px;
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 675px) {
+  .contact-bar ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
