@@ -4,6 +4,10 @@ $white-theme: #fff;
 $offwhite-theme: #fff5e1;
 $offwhite-theme2: #dbd8d7;
 
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Crete+Round");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
 .welcome {
   display: flex;
   box-sizing: border-box;
@@ -37,6 +41,7 @@ $offwhite-theme2: #dbd8d7;
       max-width: 520px;
       font-size: 16px;
       line-height: 24px;
+      font-family: 'Poppins', 'Courier New', Courier, monospace;
     }
   }
 
