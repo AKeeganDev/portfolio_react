@@ -26,6 +26,13 @@ const Navbar = () => {
     transformHamburger();
   };
 
+  // closes navbar if it is open
+  const handleClick = () => {
+    if (isOpen) {
+      setIsOpen(!isOpen);
+    }
+  };
+
   useEffect(() => {
     transformNavbar();
   }, [isOpen]);
@@ -44,13 +51,13 @@ const Navbar = () => {
 
       <div className="right-links">
         <ul className="nav-links">
-          <li role="presentation" className="nav-link" onClick={() => { setIsOpen(!isOpen); }}>
+          <li role="presentation" className="nav-link" onClick={handleClick}>
             <a href="#portfolio" id="portfolio-link">Portfolio</a>
           </li>
-          <li role="presentation" className="nav-link" onClick={() => { setIsOpen(!isOpen); }}>
+          <li role="presentation" className="nav-link" onClick={handleClick}>
             <a href="#about-me" id="about-link">About</a>
           </li>
-          <li role="presentation" className="nav-link" onClick={() => { setIsOpen(!isOpen); }}>
+          <li role="presentation" className="nav-link" onClick={handleClick}>
             <a href="#contact-me" id="contact-link">Contact</a>
           </li>
           <li className="nav-link icon-mail" id="mail-icon">
