@@ -76,7 +76,7 @@ $offwhite-theme2: #dbd8d7;
 }
 
 // moves large svg into fixed position on the right side of screen for large windows
-@media screen and (min-width: 1177px) {
+@media screen and (min-width: 1162px) {
   .welcome {
     background-position-x: 100%;
   }
