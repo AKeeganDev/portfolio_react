@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Crete+Round");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+.card {
+  min-height: 337px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background: pink;
+  width: 327px;
+  cursor: pointer;
+
+  .card-details {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 16px 0 16px;
+
+    .project-title {
+      font-family: 'Crete Round', sans-serif;
+      font-size: 32px;
+      font-weight: 400;
+      color: var(--white-theme);
+      margin-top: 85px;
+      margin-bottom: 0;
+    }
+
+    .project-description {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--white-theme);
+      margin-top: 7px;
+    }
+
+    .tags {
+      margin-bottom: 12px;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        .card-tag {
+          background: rgba(255, 255, 255, 0.24);
+          color: var(--white-theme);
+          font-family: 'Inter', sans-serif;
+          list-style: none;
+          border: 1px solid #8993a4;
+          font-size: 15px;
+          margin: 0 8px 0 0;
+          padding: 10px 10px 10px 12px;
+        }
+      }
+    }
+  }
+}

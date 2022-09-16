@@ -32,6 +32,15 @@
       margin: 0 15px 80px 15px;
     }
   }
+
+  .card-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 28px;
+    grid-template-columns: repeat(auto-fit, 327px);
+    row-gap: 25px;
+  }
 }
 
 // media queries

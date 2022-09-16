@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import '../stylesheets/projectCard.scss';
 
 const ProjectCard = (props) => {
   const {
