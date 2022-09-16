@@ -7,8 +7,20 @@ const ProjectCard = (props) => {
   } = props;
   console.log([imageCard, imagePopup, githubURL, liveDemo]);
 
+  const imageURL = `url('${imageCard}')`;
+  let background = 'linear-gradient(rgba(255,255,255,0.6), rgba(0,0,0,0.99)), ';
+  background += imageURL;
+
+  const myStyle = {
+    backgroundImage: { background },
+  };
+  console.log(background);
+
   return (
-    <div className="card card2">
+    <div
+      className="card"
+      style={myStyle}
+    >
       <div className="card-details">
         <h3 className="project-title">{title}</h3>
         <p className="project-description">{description}</p>

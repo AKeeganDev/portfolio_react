@@ -13,7 +13,7 @@ const topProject = {
 const projects = [
   {
     title: 'Portfolio',
-    imageCard: '',
+    imageCard: '../assets/portfolioCard.PNG',
     imagePopup: '',
     description: 'Welcome to my portfolio! This site holds links to my works in Github and showcases my skills in JS and HTML/CSS',
     languages: ['SCSS', 'Javascript', 'React'],

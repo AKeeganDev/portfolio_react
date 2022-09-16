@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Inter");
 
 .card {
+  color: white;
   min-height: 337px;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  background: pink;
   width: 327px;
   cursor: pointer;
 
@@ -48,7 +48,7 @@
           color: var(--white-theme);
           font-family: 'Inter', sans-serif;
           list-style: none;
-          border: 1px solid #8993a4;
+          border: none;
           font-size: 15px;
           margin: 0 8px 0 0;
           padding: 10px 10px 10px 12px;
