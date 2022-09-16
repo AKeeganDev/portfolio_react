@@ -1,0 +1,40 @@
+$theme2: #1c1a19;
+$theme3: #ff6b00;
+$white-theme: #fff;
+$offwhite-theme: #fff5e1;
+$offwhite-theme2: #dbd8d7;
+
+@import url("https://fonts.googleapis.com/css?family=Crete+Round");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.about-myself {
+  background-color: $theme2;
+
+  .personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 24px 221px 24px;
+    color: $offwhite-theme2;
+    line-height: 24px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+}
+
+// media queries
+
+@media screen and (min-width: 1100px) {
+.personal {
+    background-image: url('../assets/illustration-about\ me.svg');
+    background-position: 100%;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .personal {
+      background-image: url('../assets/illustration-about-me-mobile.png');
+      background-position: 100% 100%;
+  }
+}

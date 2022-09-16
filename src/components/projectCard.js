@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import '../stylesheets/projectCard.scss';
 
 const ProjectCard = (props) => {
-
   const {
     imageCard, imagePopup, title, description, languages, githubURL, liveDemo,
   } = props;
