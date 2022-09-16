@@ -1,0 +1,98 @@
+$theme2: #1c1a19;
+$theme3: #ff6b00;
+$white-theme: #fff;
+$offwhite-theme: #fff5e1;
+$offwhite-theme2: #dbd8d7;
+
+@import url("https://fonts.googleapis.com/css?family=Crete+Round");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+.title-project {
+  display: flex;
+
+  .featured-img-space {
+    display: flex;
+    margin-bottom: 12px;
+    flex-direction: column;
+
+    .featured-img {
+      min-width: 321.688px;
+      min-height: 233.141px;
+      background-image: url('../assets/beestorefitted.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      flex: 1 0 auto;
+    }
+
+    .title-project-details {
+      max-width: 500px;
+
+      button {
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        color: $white-theme;
+        background-color: $theme3;
+        border: none;
+        padding: 12px;
+      }
+
+      button:hover {
+        color: #ff6b00;
+        background-color: var(--offwhite-theme);
+        transition: background-color 2s;
+      }
+    }
+
+    h3 {
+      font-size: 25px;
+      font-family: 'Crete Round', sans-serif;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .tags {
+      margin-bottom: 12px;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        li {
+          font-family: 'Inter', sans-serif;
+          list-style: none;
+          border: 1px solid #8993a4;
+          font-size: 15px;
+          margin: 0 12px 0 0;
+          padding: 10px 10px 10px 12px;
+        }
+      }
+    }
+  }
+}
+
+// media queries
+
+@media screen and (min-width: 1100px) {
+  .title-project {
+    .featured-img-space {
+      flex-direction: row;
+      gap: 20px;
+
+      .featured-img {
+        width: 684px;
+        height: 448px;
+      }
+    }
+  }
+}
