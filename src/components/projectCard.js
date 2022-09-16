@@ -1,22 +1,14 @@
 import PropTypes from 'prop-types';
-// import React, { useEffect, useState } from 'react';
 import '../stylesheets/projectCard.scss';
 
 const ProjectCard = (props) => {
-  // const [, updateState] = useState();
-
-  // const forceUpdate = React.useCallback(() => updateState({}), []);
-
-  // useEffect(() => {
-  //   forceUpdate();
-  // }, []);
 
   const {
     imageCard, imagePopup, title, description, languages, githubURL, liveDemo,
   } = props;
   console.log([imageCard, imagePopup, githubURL, liveDemo]);
 
-  const background = `linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 1.0)), url("${imageCard}")`;
+  const background = `linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 1)), url("${imageCard}")`;
 
   return (
     <div
