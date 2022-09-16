@@ -13,7 +13,7 @@ const topProject = {
 const projects = [
   {
     title: 'Portfolio',
-    imageCard: '../assets/portfolioCard.PNG',
+    imageCard: './portfolioCard.PNG',
     imagePopup: '',
     description: 'Welcome to my portfolio! This site holds links to my works in Github and showcases my skills in JS and HTML/CSS',
     languages: ['SCSS', 'Javascript', 'React'],
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: 'BookStore',
-    imageCard: '',
+    imageCard: './bookstore.PNG',
     imagePopup: '',
     description: 'A fun design for a site where the intent is for a user to be able to keep track of books they are reading and document progress',
     languages: ['SCSS', 'Javascript', 'React'],
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: 'Medical Database',
-    imageCard: '',
+    imageCard: './medicalDatabase.PNG',
     imagePopup: '',
     description: 'This repo demonstrates an example database setup that could be used as a PostgreSQL backend at a clinic. Features patient info, treatment histories, and invoicing',
     languages: ['PostgreSQL'],
@@ -40,7 +40,7 @@ const projects = [
   },
   {
     title: 'Transactions App',
-    imageCard: '',
+    imageCard: 'transactions.PNG',
     imagePopup: '',
     description: 'A wireframe for a web design that a user can keep track of recipes/ingredients with',
     languages: ['Ruby', 'Rails', 'PostgreSQL', 'CSS'],
