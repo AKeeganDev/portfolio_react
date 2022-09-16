@@ -3,28 +3,24 @@ import FeaturedProject from './featuredProject';
 import ProjectCard from './projectCard';
 import { projects, topProject } from '../projects';
 
-console.log(projects);
-
-const RecentWorks = () => {
-  console.log('saving space');
-
-  return (
-    <section className="recent-works" id="portfolio">
-      <div className="recent-work-heading-container">
-        <div className="heading">
-          <h1>My Recent Works</h1>
-        </div>
-        <div className="recent-work-divider" />
+const RecentWorks = () => (
+  <section className="recent-works" id="portfolio">
+    <div className="recent-work-heading-container">
+      <div className="heading">
+        <h1>My Recent Works</h1>
       </div>
-      <FeaturedProject
-        title={topProject.title}
-        description={topProject.description}
-        languages={topProject.languages}
-        githubURL={topProject.githubURL}
-        liveDemo={topProject.liveDemo}
-      />
-      <div className="card-container">
-        {
+      <div className="recent-work-divider" />
+    </div>
+    <FeaturedProject
+      title={topProject.title}
+      imageCard={topProject.imageCard}
+      description={topProject.description}
+      languages={topProject.languages}
+      githubURL={topProject.githubURL}
+      liveDemo={topProject.liveDemo}
+    />
+    <div className="card-container">
+      {
           projects.map((project) => (
             <ProjectCard
               title={project.title}
@@ -38,9 +34,8 @@ const RecentWorks = () => {
             />
           ))
         }
-      </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default RecentWorks;

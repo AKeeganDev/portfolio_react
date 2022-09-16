@@ -17,8 +17,8 @@ const projects = [
     imagePopup: '',
     description: 'Welcome to my portfolio! This site holds links to my works in Github and showcases my skills in JS and HTML/CSS',
     languages: ['SCSS', 'Javascript', 'React'],
-    githubURL: 'https://github.com/jsug9/bee-bookings-front-end',
-    liveDemo: 'https://beebookcapstone.netlify.app/',
+    githubURL: 'https://github.com/AKeeganDev/Portfolio',
+    liveDemo: '',
   },
   {
     title: 'BookStore',
@@ -42,9 +42,9 @@ const projects = [
     title: 'Transactions App',
     imageCard: 'transactions.PNG',
     imagePopup: '',
-    description: 'A wireframe for a web design that a user can keep track of recipes/ingredients with',
+    description: 'A wireframe for a web design that a user can keep track of expenses with',
     languages: ['Ruby', 'Rails', 'PostgreSQL', 'CSS'],
-    githubURL: 'https://github.com/AKeeganDev/medical-database',
+    githubURL: 'https://github.com/AKeeganDev/ruby_transactions_app',
     liveDemo: 'https://powerful-beach-62790.herokuapp.com/home',
   },
 ];
