@@ -1,5 +1,9 @@
 import '../stylesheets/recentWorks.scss';
 import FeaturedProject from './featuredProject';
+import ProjectCard from './projectCard';
+import { projects, topProject } from '../projects';
+
+console.log(projects);
 
 const RecentWorks = () => {
   console.log('saving space');
@@ -13,14 +17,28 @@ const RecentWorks = () => {
         <div className="recent-work-divider" />
       </div>
       <FeaturedProject
-        title="BeeStore"
-        description={'Interactive SPA in which the user can view, add, delete,'
-        + ' '
-        + 'and reserve bees. Our app allows a user to add a photo of their choosing by using AWS API. Built using React.'}
-        languages={['SCSS', 'Ruby', 'Javascript', 'PostgreSQL']}
-        githubURL="https://github.com/jsug9/bee-bookings-front-end"
-        liveDemo="https://beebookcapstone.netlify.app/"
+        title={topProject.title}
+        description={topProject.description}
+        languages={topProject.languages}
+        githubURL={topProject.githubURL}
+        liveDemo={topProject.liveDemo}
       />
+      <div className="card-container">
+        {
+          projects.map((project) => (
+            <ProjectCard
+              title={project.title}
+              imageCard={project.imageCard}
+              imagePopup={project.imagePopup}
+              description={project.description}
+              languages={project.languages}
+              githubURL={project.githubURL}
+              liveDemo={project.liveDemo}
+              key={projects.indexOf(project)}
+            />
+          ))
+        }
+      </div>
     </section>
   );
 };
