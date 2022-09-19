@@ -79,15 +79,15 @@ const ContactMe = () => {
   return (
     <section className="contact-me" id="contact-me">
       <h1 className="contact-me-header">
-        I&apos;m always interested in hearing about new projects,
+        I&apos;m currently looking for work!
         {' '}
-        so if you&apos;d like to chat please get in touch.
+        If you&apos;d like to chat about a project or hiring opportunity then please get in touch.
       </h1>
       <form className="contact-form" action="https://formspree.io/f/mvolaagj" method="post">
         <input type="text" name="full-name" id="full-name" placeholder="Full name" required="" maxLength="30" />
         <input type="email" name="email" id="mail" placeholder="Email address" title="Please use all lower-case characters for your email address" required="" />
         <span className="error" aria-live="polite" />
-        <textarea name="details" id="details" cols="30" rows="10" placeholder="(Optional) Please feel free to add any details of the project that you will be inquiring about" maxLength="500" />
+        <textarea name="details" id="details" cols="30" rows="10" placeholder="(Optional) Please feel free to add any details of the project/job opening that you will be inquiring about" maxLength="500" />
         <button type="submit" className="see-project submit">Get in touch</button>
       </form>
     </section>
