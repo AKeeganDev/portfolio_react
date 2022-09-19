@@ -4,6 +4,7 @@ import Navbar from './components/navbar';
 import Welcome from './components/welcome';
 import RecentWorks from './components/recentWorks';
 import AboutMe from './components/aboutMe';
+import ContactMe from './components/contactMe';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Welcome />
       <RecentWorks />
       <AboutMe />
+      <ContactMe />
     </>
   );
 }

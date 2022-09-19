@@ -1,0 +1,74 @@
+$theme3: #ff6b00;
+$white-theme: #fff;
+$offwhite-theme: #fff5e1;
+
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+.contact-me {
+  padding: 120px 24px 0 24px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .contact-me-header {
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 400px;
+    margin: 10px;
+  }
+
+  form > * {
+    margin-bottom: 24px;
+  }
+
+  form {
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    margin-bottom: 100px;
+    flex: 2;
+
+    #full-name,
+    #mail {
+      font-size: 15px;
+      font-family: Inter, sans-serif;
+      padding: 14px;
+      border: none;
+      border-bottom: 1.5px solid #dbd8d7;
+    }
+
+    input[type='email'] {
+      text-transform: lowercase;
+    }
+
+    textarea {
+      background-color: #fbf8f7;
+      border: none;
+      padding: 10px;
+      display: flex;
+    }
+
+    button {
+      font-size: 17px;
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      color: $white-theme;
+      background-color: $theme3;
+      border: none;
+      padding: 12px;
+    }
+
+    button:hover {
+      color: #ff6b00;
+      background-color: $offwhite-theme;
+      transition: background-color 2s;
+    }
+  }
+}
