@@ -51,10 +51,10 @@ const AboutMe = () => (
               <span className="orange">●</span>
               Skills
             </li>
-            <li className="lang">Codekit</li>
+            <li className="lang">Version Control</li>
             <li className="lang">Github</li>
-            <li className="lang">Codepen</li>
-            <li className="lang">Gitlab</li>
+            <li className="lang">Gitflow</li>
+            <li className="lang">MVC Design</li>
             <li className="lang">Terminal</li>
           </ul>
         </div>
