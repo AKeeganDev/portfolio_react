@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import '../stylesheets/projectCard.scss';
 
 const ProjectCard = (props) => {
-
   const {
     imageCard, imagePopup, title, description, languages, githubURL, liveDemo,
   } = props;
@@ -15,23 +14,19 @@ const ProjectCard = (props) => {
       className="card"
       style={{ backgroundImage: background }}
     >
-      <div
-        className="card-overlay"
-      >
-        <div className="card-details">
-          <h3 className="project-title">{title}</h3>
-          <p className="project-description">{description}</p>
-          <div className="tags">
-            <ul>
-              {languages.map((language) => (
-                <li className="card-tag" key={languages.indexOf(language)}>
-                  <div>
-                    {language}
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+      <div className="card-details">
+        <h3 className="project-title">{title}</h3>
+        <p className="project-description">{description}</p>
+        <div className="tags">
+          <ul>
+            {languages.map((language) => (
+              <li className="card-tag" key={languages.indexOf(language)}>
+                <div>
+                  {language}
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
