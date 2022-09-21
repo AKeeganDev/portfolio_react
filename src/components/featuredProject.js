@@ -4,7 +4,7 @@ import { generatePopup } from './popupModal';
 
 const FeaturedProject = (props) => {
   const {
-    title, description, languages, githubURL, liveDemo,
+    title, description, languages, githubURL, liveDemo, imagePopup,
   } = props;
 
   return (
@@ -26,22 +26,14 @@ const FeaturedProject = (props) => {
                 </li>
               ))}
             </ul>
-            {/* <ul>
-              <li>
-                <div>CSS</div>
-              </li>
-              <li>
-                <div>HTML</div>
-              </li>
-              <li>
-                <div>Bootstrap</div>
-              </li>
-              <li>
-                <div>Ruby</div>
-              </li>
-            </ul> */}
           </div>
-          <button type="button" className="see-project card-button open-modal" onClick={() => generatePopup(githubURL, liveDemo)}>
+          <button
+            type="button"
+            className="see-project card-button open-modal"
+            onClick={() => {
+              generatePopup(githubURL, liveDemo, imagePopup, languages, description, title);
+            }}
+          >
             <span>See Project</span>
           </button>
         </div>
@@ -56,6 +48,7 @@ FeaturedProject.propTypes = {
   languages: PropTypes.arrayOf(PropTypes.string).isRequired,
   githubURL: PropTypes.string.isRequired,
   liveDemo: PropTypes.string.isRequired,
+  imagePopup: PropTypes.string.isRequired,
 };
 
 export default FeaturedProject;

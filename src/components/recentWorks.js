@@ -14,6 +14,7 @@ const RecentWorks = () => (
     <FeaturedProject
       title={topProject.title}
       imageCard={topProject.imageCard}
+      imagePopup={topProject.imagePopup}
       description={topProject.description}
       languages={topProject.languages}
       githubURL={topProject.githubURL}
