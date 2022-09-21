@@ -1,0 +1,162 @@
+$theme2: #1c1a19;
+$theme3: #ff6b00;
+$white-theme: #fff;
+$offwhite-theme: #fff5e1;
+$offwhite-theme2: #dbd8d7;
+
+@import url("https://fonts.googleapis.com/css?family=Crete+Round");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+#modal-backdrop {
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+
+  #modal {
+    box-sizing: border-box;
+    background-color: $white-theme;
+    border: 1px solid #dfe1e6;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    padding: 1rem;
+    flex: 1;
+    max-width: 1000px;
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .modal-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #172b4d;
+      }
+
+      .modal-close {
+        width: 40px;
+        height: 40px;
+        background-image: url('../assets/modal-close.svg');
+        cursor: pointer;
+      }
+    }
+
+    .modal-tags {
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        li {
+          font-family: 'Poppins', sans-serif;
+          list-style: none;
+          border: 1px solid #8993a4;
+          font-size: 13px;
+          font-weight: 600;
+          margin: 0 12px 0 0;
+          padding: 6px;
+        }
+      }
+    }
+
+    .modal-details {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+      .modal-image {
+        display: flex;
+        flex: 1;
+        width: 65%;
+        max-width: 454px;
+        margin: 1rem 0;
+      }
+
+      .modal-description {
+        .modal-text {
+          font-family: 'inter', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          color: #344563;
+          max-width: 400px;
+          max-height: 200px;
+          margin-top: 0;
+          padding-right: 0;
+        }
+
+        div {
+          .source-button {
+            margin-right: 10px;
+          }
+
+          a {
+            font-size: 17px;
+            font-weight: 700;
+            font-family: 'Inter', sans-serif;
+            color: $white-theme;
+            background-color: $theme3;
+            border: none;
+            padding: 12px;
+            display: flex;
+            float: left;
+            gap: 8px;
+            align-items: center;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (min-width: 675px) {
+  .modal-details {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .modal-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  a.modal-button {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 675px) {
+  .modal-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+}

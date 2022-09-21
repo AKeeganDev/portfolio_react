@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import '../stylesheets/projectCard.scss';
+import { generatePopup } from './popupModal';
 
 const ProjectCard = (props) => {
   const {
     imageCard, imagePopup, title, description, languages, githubURL, liveDemo,
   } = props;
-  console.log([imageCard, imagePopup, githubURL, liveDemo]);
 
   const background = `linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 1)), url("${imageCard}")`;
 
@@ -13,6 +13,10 @@ const ProjectCard = (props) => {
     <div
       className="card"
       style={{ backgroundImage: background }}
+      onClick={() => {
+        generatePopup(githubURL, liveDemo, imagePopup, languages, description, title);
+      }}
+      role="presentation"
     >
       <div className="card-details">
         <h3 className="project-title">{title}</h3>
