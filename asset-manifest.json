@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f8f9868a.css",
+    "main.js": "/static/js/main.d2461d4c.js",
+    "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
+    "static/media/beestorefitted.png": "/static/media/beestorefitted.1e2cbad3a1d2fff6f8b8.png",
+    "static/media/Illustration-header-full.svg": "/static/media/Illustration-header-full.344d27d04c73afdf9028.svg",
+    "static/media/illustration-about me.svg": "/static/media/illustration-about me.e87e2f4ae54c6ce1b48b.svg",
+    "static/media/illustration-header-mobile.svg": "/static/media/illustration-header-mobile.a420cc24116f04b3914d.svg",
+    "static/media/modal-close.svg": "/static/media/modal-close.82208bd1e993ed8e607e.svg",
+    "index.html": "/index.html",
+    "main.f8f9868a.css.map": "/static/css/main.f8f9868a.css.map",
+    "main.d2461d4c.js.map": "/static/js/main.d2461d4c.js.map",
+    "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8f9868a.css",
+    "static/js/main.d2461d4c.js"
+  ]
+}
