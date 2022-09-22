@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.84d60efe.css",
+    "main.css": "/portfolio_react/static/css/main.b22cc4d7.css",
     "main.js": "/portfolio_react/static/js/main.f848c47b.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio_react/static/js/787.aeca62f9.chunk.js",
     "static/media/beestorefitted.png": "/portfolio_react/static/media/beestorefitted.1e2cbad3a1d2fff6f8b8.png",
+    "static/media/Poppins-Regular.ttf": "/portfolio_react/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/portfolioCard.PNG": "/portfolio_react/static/media/portfolioCard.60be2b5fad39bd0ddfea.PNG",
     "static/media/medicalDatabase.PNG": "/portfolio_react/static/media/medicalDatabase.d687c490499ba445aeeb.PNG",
     "static/media/bookstore.PNG": "/portfolio_react/static/media/bookstore.b37a60976210f820b8de.PNG",
@@ -13,12 +14,12 @@
     "static/media/illustration-header-mobile.svg": "/portfolio_react/static/media/illustration-header-mobile.a420cc24116f04b3914d.svg",
     "index.html": "/portfolio_react/index.html",
     "static/media/modal-close.svg": "/portfolio_react/static/media/modal-close.82208bd1e993ed8e607e.svg",
-    "main.84d60efe.css.map": "/portfolio_react/static/css/main.84d60efe.css.map",
+    "main.b22cc4d7.css.map": "/portfolio_react/static/css/main.b22cc4d7.css.map",
     "main.f848c47b.js.map": "/portfolio_react/static/js/main.f848c47b.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio_react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84d60efe.css",
+    "static/css/main.b22cc4d7.css",
     "static/js/main.f848c47b.js"
   ]
 }
