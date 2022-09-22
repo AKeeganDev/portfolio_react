@@ -15,7 +15,7 @@ $offwhite-theme2: #dbd8d7;
   top: 0;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: black;
   background: rgba(0, 0, 0, 0.7);
@@ -31,7 +31,7 @@ $offwhite-theme2: #dbd8d7;
     width: 343px;
     padding: 1rem;
     flex: 1;
-    max-width: 1000px;
+    max-width: 1050px;
 
     .modal-header {
       display: flex;
@@ -60,6 +60,7 @@ $offwhite-theme2: #dbd8d7;
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
+        margin-bottom: 6px;
 
         li {
           font-family: 'Poppins', sans-serif;
@@ -79,7 +80,6 @@ $offwhite-theme2: #dbd8d7;
       .modal-image {
         display: flex;
         flex: 1;
-        width: 65%;
         max-width: 454px;
         margin: 1rem 0;
       }
@@ -95,6 +95,7 @@ $offwhite-theme2: #dbd8d7;
           max-height: 200px;
           margin-top: 0;
           padding-right: 0;
+          display: contents;
         }
 
         div {
@@ -134,8 +135,9 @@ $offwhite-theme2: #dbd8d7;
   .modal-details {
     display: flex;
     flex-direction: row;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     gap: 30px;
+    justify-content: space-around;
   }
 }
 
@@ -143,7 +145,7 @@ $offwhite-theme2: #dbd8d7;
   .modal-details {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -159,5 +161,24 @@ $offwhite-theme2: #dbd8d7;
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem 0;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .modal-details {
+    #popup-image {
+      width: 30%;
+    }
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 26px;
+  }
+}
+
+@media screen and (min-height: 501px) {
+  #popup-image {
+    width: 60%;
   }
 }
