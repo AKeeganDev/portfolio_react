@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.61bdf8cd.css",
-    "main.js": "/portfolio_react/static/js/main.ad2eac5c.js",
+    "main.css": "/portfolio_react/static/css/main.7c280c7f.css",
+    "main.js": "/portfolio_react/static/js/main.0dc51e80.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio_react/static/js/787.aeca62f9.chunk.js",
     "static/media/beestorefitted.png": "/portfolio_react/static/media/beestorefitted.1e2cbad3a1d2fff6f8b8.png",
     "static/media/Poppins-Regular.ttf": "/portfolio_react/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -14,12 +14,12 @@
     "static/media/illustration-header-mobile.svg": "/portfolio_react/static/media/illustration-header-mobile.a420cc24116f04b3914d.svg",
     "index.html": "/portfolio_react/index.html",
     "static/media/modal-close.svg": "/portfolio_react/static/media/modal-close.82208bd1e993ed8e607e.svg",
-    "main.61bdf8cd.css.map": "/portfolio_react/static/css/main.61bdf8cd.css.map",
-    "main.ad2eac5c.js.map": "/portfolio_react/static/js/main.ad2eac5c.js.map",
+    "main.7c280c7f.css.map": "/portfolio_react/static/css/main.7c280c7f.css.map",
+    "main.0dc51e80.js.map": "/portfolio_react/static/js/main.0dc51e80.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio_react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61bdf8cd.css",
-    "static/js/main.ad2eac5c.js"
+    "static/css/main.7c280c7f.css",
+    "static/js/main.0dc51e80.js"
   ]
 }
