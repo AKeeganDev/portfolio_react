@@ -12,7 +12,7 @@ const AboutMe = () => (
           {' '}
           and have a project you need coded, don’t hestiate to contact me.
         </p>
-        <button type="button" className="see-project resume"><span>Get my Resume</span></button>
+        <button type="button" className="see-project resume" onClick={() => { window.open('https://drive.google.com/file/d/13bX1O8TRFuXPJsujDcISXU5R8zI3w0wP/view?usp=sharing', '_blank'); }}><span>Get my Resume</span></button>
       </div>
     </div>
     <div className="margin">

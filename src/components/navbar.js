@@ -61,7 +61,7 @@ const Navbar = () => {
             <a href="#contact-me" id="contact-link">Contact</a>
           </li>
           <li className="nav-link icon-mail" id="mail-icon">
-            <a href="mailto:user@example.com">
+            <a href="mailto:akeegan.dev@gmail.com?subject=I would like to meet you!">
               <div className="icon-mail" />
               <MdOutlineEmail />
             </a>

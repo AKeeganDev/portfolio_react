@@ -35,14 +35,14 @@ const generatePopup = (githubURL = 'url', liveDemo = 'liveurl', modalImage = 'im
 
   // Creates buttons based on whether the project has a live demo link or not
   if (liveDemo) {
-    buttons.innerHTML = `<a id="see-project" href="${githubURL}" class="see-project modal-button source-button">
+    buttons.innerHTML = `<a id="see-project" href="${githubURL}" target="_blank" class="see-project modal-button source-button">
     See project
   </a>
-  <a id="live-demo" href="${liveDemo}" class="see-project modal-button">
+  <a id="live-demo" href="${liveDemo}" target="_blank" class="see-project modal-button">
     live Demo
   </a>`;
   } else {
-    buttons.innerHTML = `<a id="see-project" type="button" href="${githubURL}" className="see-project modal-button source-button">
+    buttons.innerHTML = `<a id="see-project" type="button" href="${githubURL} target="_blank"" className="see-project modal-button source-button">
     See project
   </a>`;
   }

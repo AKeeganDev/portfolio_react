@@ -17,8 +17,8 @@ const projects = [
     imagePopup: './portfolioCard.PNG',
     description: 'Welcome to my portfolio! This site holds links to my works in Github and showcases my skills in JS and HTML/CSS',
     languages: ['SCSS', 'Javascript', 'React'],
-    githubURL: 'https://github.com/AKeeganDev/Portfolio',
-    liveDemo: '',
+    githubURL: 'https://github.com/AKeeganDev/portfolio_react',
+    liveDemo: 'https://akeegandev.github.io/portfolio_react/',
   },
   {
     title: 'BookStore',
