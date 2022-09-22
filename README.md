@@ -3,7 +3,7 @@
 This repo is a showcase of my Javascript, React, HTML, and SCSS skills. I use GitPages to host my site and all of my present and future work will be posted here as they become available. At the moment I am showcasing my top 5 most recently built projects.
 
 ## Live Demo
-Coming Soon
+https://akeegandev.github.io/portfolio_react/
 
 
 ## Built With
