@@ -39,7 +39,6 @@ const Navbar = () => {
   const checkNavStateOnLoad = () => {
     const nav = document.getElementById('navbar');
     if (!isOpen && nav.classList.contains('navbar-expanded')) {
-      console.log('nav is open unexpectedly');
       transformNavbar();
     }
   };
