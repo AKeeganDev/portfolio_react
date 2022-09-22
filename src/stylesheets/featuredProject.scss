@@ -25,7 +25,10 @@ $offwhite-theme2: #dbd8d7;
     }
 
     .title-project-details {
+      display: flex;
+      flex-direction: column;
       max-width: 500px;
+      align-items: flex-start;
 
       button {
         cursor: pointer;
@@ -59,6 +62,8 @@ $offwhite-theme2: #dbd8d7;
     }
 
     .tags {
+      display: flex;
+      flex-wrap: wrap;
       margin-bottom: 12px;
 
       ul {
@@ -92,6 +97,28 @@ $offwhite-theme2: #dbd8d7;
       .featured-img {
         width: 684px;
         height: 448px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .title-project 
+
+  .featured-img-space {
+    align-items: center;
+
+    .title-project-details {
+      max-width: 500px;
+      align-items: center;
+      flex-direction: column;
+
+      .tags {
+        ul {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
       }
     }
   }

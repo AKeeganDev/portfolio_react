@@ -14,6 +14,10 @@ const Welcome = () => (
         {' '}
         The power of the internet makes that a reality today!
         For info about me and for snapshots of my work, please continue reading my site.
+        {' '}
+        Please click on a project card below for more information and a link to its demo
+        {' '}
+        (if available).
       </p>
     </div>
     <div className="contact-bar">
