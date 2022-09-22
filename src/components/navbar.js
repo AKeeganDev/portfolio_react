@@ -33,8 +33,20 @@ const Navbar = () => {
     }
   };
 
+  /* Had to write this since UseEffect was opening the state of the navbar due to strict mode
+  This method checks to see if the navbar is open on page load and corrects the state when
+  UseEffect finishes re-render */
+  const checkNavStateOnLoad = () => {
+    const nav = document.getElementById('navbar');
+    if (!isOpen && nav.classList.contains('navbar-expanded')) {
+      console.log('nav is open unexpectedly');
+      transformNavbar();
+    }
+  };
+
   useEffect(() => {
     transformNavbar();
+    checkNavStateOnLoad();
   }, [isOpen]);
 
   // event listeners that correct navbar if the screen resizes
@@ -67,7 +79,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div role="presentation" id="hamburger" className="invisible" onClick={() => { setIsOpen(!isOpen); }} onKeyDown={transformHamburger}>
+        <div role="presentation" id="hamburger" className="invisible" onClick={() => { setIsOpen(!isOpen); }}>
           <div id="top-slice" className="bar bar-top" />
           <div id="middle-slice" className="bar bar-middle" />
           <div id="bottom-slice" className="bar bar-bottom" />
