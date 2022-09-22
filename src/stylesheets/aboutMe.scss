@@ -4,9 +4,13 @@ $white-theme: #fff;
 $offwhite-theme: #fff5e1;
 $offwhite-theme2: #dbd8d7;
 
+@font-face {
+  font-family: Poppins;
+  src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
 @import url("https://fonts.googleapis.com/css?family=Crete+Round");
 @import url("https://fonts.googleapis.com/css?family=Inter");
-@import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=InaiMathi");
 
 .about-myself {
@@ -33,17 +37,17 @@ $offwhite-theme2: #dbd8d7;
     }
 
     p {
-      color: var(--offwhite-theme2);
+      color: $offwhite-theme2;
       line-height: 24px;
-      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 17px;
       max-width: 500px;
     }
 
     button {
       font-size: 17px;
       font-weight: 700;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Lato', sans-serif;
       color: $white-theme;
       background-color: $theme3;
       border: none;
