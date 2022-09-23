@@ -6,13 +6,29 @@ const AboutMe = () => (
       <div className="personal-text">
         <h1 className="greeting">About me</h1>
         <p>
-          Hello I’m a software developer! I can help you build a product, website feature or
+          I started my Software development journey in 2020 where I started with programming in
           {' '}
-          website! Take a look through some of my work and experience. If you like what you see
+          Python. Since then I taught myself Java due to hiring needs,
           {' '}
-          and have a project you need coded, don’t hestiate to contact me.
+          but moved into Web Development when I learned about
+          {' '}
+          <a
+            className="microverse"
+            href="https://drive.google.com/file/d/1dCDwTatfExRFBhGzzpDYwx1MTYXRAWQj/view"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Microverse
+          </a>
+          .
+          {' '}
+          I have completed their curriculum and I now have over 1,600 hours of full-stack web
+          {' '}
+          development experience. Please view my resume or scroll further to see the additional
+          {' '}
+          stacks that I have experience with. Thank you for visiting my site!
         </p>
-        <button type="button" className="see-project resume" onClick={() => { window.open('https://drive.google.com/file/d/13bX1O8TRFuXPJsujDcISXU5R8zI3w0wP/view?usp=sharing', '_blank'); }}><span>Get my Resume</span></button>
+        <button type="button" className="see-project resume" onClick={() => { window.open('https://drive.google.com/file/d/1rZ8WfmUVCjvcKHicsHc9DudPwlzQz4Xd/view?usp=sharing', '_blank'); }}><span>Get my Resume</span></button>
       </div>
     </div>
     <div className="margin">
@@ -24,7 +40,7 @@ const AboutMe = () => (
           <ul>
             <li className="language">
               <span className="orange">◆</span>
-              Language
+              Languages
             </li>
             <li className="lang">Javascript</li>
             <li className="lang">Ruby</li>

@@ -42,6 +42,12 @@ $offwhite-theme2: #dbd8d7;
       font-family: 'Poppins', sans-serif;
       font-size: 17px;
       max-width: 500px;
+
+      a {
+        color: $offwhite-theme2;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+      }
     }
 
     button {
