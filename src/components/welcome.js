@@ -6,7 +6,7 @@ const Welcome = () => (
   <section className="welcome">
     <div className="greeting-text-container">
       <div className="greeting">Hey There. I&apos;m Aaron</div>
-      <h3 className="who-am-i">I am a software Developer</h3>
+      <h3 className="who-am-i">I am a Software Developer</h3>
       <p>
         Welcome to my portfolio page.
         <br />
