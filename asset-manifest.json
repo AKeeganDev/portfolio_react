@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.47ef0fff.css",
+    "main.css": "/portfolio_react/static/css/main.918963b4.css",
     "main.js": "/portfolio_react/static/js/main.9eca5456.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio_react/static/js/787.aeca62f9.chunk.js",
     "static/media/beestorefitted.png": "/portfolio_react/static/media/beestorefitted.1e2cbad3a1d2fff6f8b8.png",
@@ -14,12 +14,12 @@
     "static/media/illustration-header-mobile.svg": "/portfolio_react/static/media/illustration-header-mobile.a420cc24116f04b3914d.svg",
     "index.html": "/portfolio_react/index.html",
     "static/media/modal-close.svg": "/portfolio_react/static/media/modal-close.82208bd1e993ed8e607e.svg",
-    "main.47ef0fff.css.map": "/portfolio_react/static/css/main.47ef0fff.css.map",
+    "main.918963b4.css.map": "/portfolio_react/static/css/main.918963b4.css.map",
     "main.9eca5456.js.map": "/portfolio_react/static/js/main.9eca5456.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio_react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47ef0fff.css",
+    "static/css/main.918963b4.css",
     "static/js/main.9eca5456.js"
   ]
 }
