@@ -39,7 +39,7 @@ const generatePopup = (githubURL = 'url', liveDemo = 'liveurl', modalImage = 'im
     See project
   </a>
   <a id="live-demo" href="${liveDemo}" target="_blank" class="see-project modal-button">
-    live Demo
+    Live demo
   </a>`;
   } else {
     buttons.innerHTML = `<a id="see-project" type="button" href="${githubURL}" target="_blank" className="see-project modal-button source-button">

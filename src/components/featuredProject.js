@@ -34,7 +34,7 @@ const FeaturedProject = (props) => {
               generatePopup(githubURL, liveDemo, imagePopup, languages, description, title);
             }}
           >
-            <span>See Project</span>
+            <span>See project</span>
           </button>
         </div>
       </div>

@@ -22,13 +22,13 @@ const AboutMe = () => (
           </a>
           .
           {' '}
-          I have completed their curriculum and I now have over 1,600 hours of full-stack web
+          I have completed their program and I now have over 1,600 hours of full-stack web
           {' '}
           development experience. Please view my resume or scroll further to see the additional
           {' '}
           stacks that I have experience with. Thank you for visiting my site!
         </p>
-        <button type="button" className="see-project resume" onClick={() => { window.open('https://drive.google.com/file/d/16paxk1HQhrKi0cNUdUY9t5xrv1Qu6lZj/view?usp=sharing', '_blank'); }}><span>Get my Resume</span></button>
+        <button type="button" className="see-project resume" onClick={() => { window.open('https://drive.google.com/file/d/16paxk1HQhrKi0cNUdUY9t5xrv1Qu6lZj/view?usp=sharing', '_blank'); }}><span>Get my resume</span></button>
       </div>
     </div>
     <div className="margin">

@@ -7,7 +7,10 @@ $white-theme: #fff;
 $offwhite-theme: #fff5e1;
 $offwhite-theme2: #dbd8d7;
 
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
 #navbar {
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   display: flex;
   justify-content: space-between;
   flex: 1;

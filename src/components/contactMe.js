@@ -87,7 +87,7 @@ const ContactMe = () => {
         <input type="text" name="full-name" id="full-name" placeholder="Full name" required="" maxLength="30" />
         <input type="email" name="email" id="mail" placeholder="Email address" title="Please use all lower-case characters for your email address" required="" />
         <span className="error" aria-live="polite" />
-        <textarea name="details" id="details" cols="30" rows="10" placeholder="(Optional) Please feel free to add any details of the project/job opening that you will be inquiring about" maxLength="500" />
+        <textarea name="details" id="details" cols="30" rows="10" placeholder="(Optional) Please feel free to add any details of the project/job opening that you will be reaching out about" maxLength="500" />
         <button type="submit" className="see-project submit">Get in touch</button>
       </form>
     </section>
