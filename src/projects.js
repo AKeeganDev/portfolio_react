@@ -13,7 +13,7 @@ const topProject = {
   + 'and reserve bees. Our app allows a user to add a photo of their choosing by using AWS API. Built using React.',
   languages: ['SCSS', 'Ruby', 'JavaScript', 'PostgreSQL', 'React'],
   githubURL: 'https://github.com/jsug9/bee-bookings-front-end',
-  liveDemo: 'https://beebookcapstone.netlify.app/',
+  liveDemo: '',
 };
 
 const projects = [
@@ -42,7 +42,7 @@ const projects = [
     description: 'A wireframe for a web design that a user can keep track of expenses with',
     languages: ['Ruby', 'Rails', 'PostgreSQL', 'CSS'],
     githubURL: 'https://github.com/AKeeganDev/ruby_transactions_app',
-    liveDemo: 'https://powerful-beach-62790.herokuapp.com/home',
+    liveDemo: '',
   },
   {
     title: 'BookStore',
