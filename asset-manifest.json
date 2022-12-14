@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio_react/static/css/main.918963b4.css",
-    "main.js": "/portfolio_react/static/js/main.9eca5456.js",
+    "main.js": "/portfolio_react/static/js/main.6b42f823.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio_react/static/js/787.aeca62f9.chunk.js",
     "static/media/beestorefitted.png": "/portfolio_react/static/media/beestorefitted.1e2cbad3a1d2fff6f8b8.png",
     "static/media/Poppins-Regular.ttf": "/portfolio_react/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -15,11 +15,11 @@
     "index.html": "/portfolio_react/index.html",
     "static/media/modal-close.svg": "/portfolio_react/static/media/modal-close.82208bd1e993ed8e607e.svg",
     "main.918963b4.css.map": "/portfolio_react/static/css/main.918963b4.css.map",
-    "main.9eca5456.js.map": "/portfolio_react/static/js/main.9eca5456.js.map",
+    "main.6b42f823.js.map": "/portfolio_react/static/js/main.6b42f823.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio_react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.918963b4.css",
-    "static/js/main.9eca5456.js"
+    "static/js/main.6b42f823.js"
   ]
 }
