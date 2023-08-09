@@ -28,7 +28,7 @@ const AboutMe = () => (
           {' '}
           stacks that I have experience with. Thank you for visiting my site!
         </p>
-        <button type="button" className="see-project resume" onClick={() => { window.open('https://drive.google.com/file/d/1MkPxPp5Ii-ypRoluAimNLGsKJMPkMqix/view?usp=sharing', '_blank'); }}><span>Get my resume</span></button>
+        <button type="button" className="see-project resume" onClick={() => { window.open('https://docs.google.com/document/d/1BK2Yw0gEIqpVVIw-C_wZXSgF1pU7pciJ430kgJ_QzxA/edit?usp=sharing', '_blank'); }}><span>Get my resume</span></button>
       </div>
     </div>
     <div className="margin">
