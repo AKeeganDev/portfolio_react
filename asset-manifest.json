@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio_react_2/static/css/main.1d7790eb.css",
-    "main.js": "/portfolio_react_2/static/js/main.59757bd5.js",
-    "static/js/787.aeca62f9.chunk.js": "/portfolio_react_2/static/js/787.aeca62f9.chunk.js",
-    "static/media/Poppins-Regular.ttf": "/portfolio_react_2/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/recipeAppSnip.png": "/portfolio_react_2/static/media/recipeAppSnip.bf0b2ead5c764d310173.png",
-    "static/media/crmSnip.png": "/portfolio_react_2/static/media/crmSnip.a5a57349bfbb0e55989e.png",
-    "static/media/portfolioCard.PNG": "/portfolio_react_2/static/media/portfolioCard.60be2b5fad39bd0ddfea.PNG",
-    "static/media/medicalDatabase.PNG": "/portfolio_react_2/static/media/medicalDatabase.d687c490499ba445aeeb.PNG",
-    "static/media/transactions.PNG": "/portfolio_react_2/static/media/transactions.855d1583144a0118de2c.PNG",
-    "static/media/Illustration-header-full.svg": "/portfolio_react_2/static/media/Illustration-header-full.344d27d04c73afdf9028.svg",
-    "static/media/illustration-about me.svg": "/portfolio_react_2/static/media/illustration-about me.e87e2f4ae54c6ce1b48b.svg",
-    "static/media/illustration-header-mobile.svg": "/portfolio_react_2/static/media/illustration-header-mobile.a420cc24116f04b3914d.svg",
-    "index.html": "/portfolio_react_2/index.html",
-    "static/media/modal-close.svg": "/portfolio_react_2/static/media/modal-close.82208bd1e993ed8e607e.svg",
-    "main.1d7790eb.css.map": "/portfolio_react_2/static/css/main.1d7790eb.css.map",
-    "main.59757bd5.js.map": "/portfolio_react_2/static/js/main.59757bd5.js.map",
-    "787.aeca62f9.chunk.js.map": "/portfolio_react_2/static/js/787.aeca62f9.chunk.js.map"
+    "main.css": "/portfolio_react/static/css/main.2dd68dd5.css",
+    "main.js": "/portfolio_react/static/js/main.d9762a54.js",
+    "static/js/787.aeca62f9.chunk.js": "/portfolio_react/static/js/787.aeca62f9.chunk.js",
+    "static/media/Poppins-Regular.ttf": "/portfolio_react/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/recipeAppSnip.png": "/portfolio_react/static/media/recipeAppSnip.bf0b2ead5c764d310173.png",
+    "static/media/crmSnip.png": "/portfolio_react/static/media/crmSnip.a5a57349bfbb0e55989e.png",
+    "static/media/portfolioCard.PNG": "/portfolio_react/static/media/portfolioCard.60be2b5fad39bd0ddfea.PNG",
+    "static/media/medicalDatabase.PNG": "/portfolio_react/static/media/medicalDatabase.d687c490499ba445aeeb.PNG",
+    "static/media/transactions.PNG": "/portfolio_react/static/media/transactions.855d1583144a0118de2c.PNG",
+    "static/media/Illustration-header-full.svg": "/portfolio_react/static/media/Illustration-header-full.344d27d04c73afdf9028.svg",
+    "static/media/illustration-about me.svg": "/portfolio_react/static/media/illustration-about me.e87e2f4ae54c6ce1b48b.svg",
+    "static/media/illustration-header-mobile.svg": "/portfolio_react/static/media/illustration-header-mobile.a420cc24116f04b3914d.svg",
+    "index.html": "/portfolio_react/index.html",
+    "static/media/modal-close.svg": "/portfolio_react/static/media/modal-close.82208bd1e993ed8e607e.svg",
+    "main.2dd68dd5.css.map": "/portfolio_react/static/css/main.2dd68dd5.css.map",
+    "main.d9762a54.js.map": "/portfolio_react/static/js/main.d9762a54.js.map",
+    "787.aeca62f9.chunk.js.map": "/portfolio_react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d7790eb.css",
-    "static/js/main.59757bd5.js"
+    "static/css/main.2dd68dd5.css",
+    "static/js/main.d9762a54.js"
   ]
 }
