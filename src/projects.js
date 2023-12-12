@@ -8,9 +8,9 @@ const topProject = {
   title: 'Recipe Web App',
   imageCard: '../assets/recipeAppSnip.png',
   imagePopup: recipeApp,
-  description: 'Interactive site where users can log in and post their favorite recipes!'
+  description: 'An interactive site where users can log in and post their favorite recipes!'
   + ' '
-  + 'This service is hosted on Render\'s free tier so it may be slow to start up if it has\'t loaded up in a while',
+  + 'This service is hosted on Render\'s free hosting tier so it may be rather slow to initially display in the browser if it hasn\'t loaded up in a while. Please allow it a minute or two to load.',
   languages: ['SCSS', 'Ruby', 'PostgreSQL'],
   githubURL: 'https://github.com/AKeeganDev/recipe_app',
   liveDemo: 'https://recipe-app-public.onrender.com/',
